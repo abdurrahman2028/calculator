@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+<body class="w-[100% ] h-[100vh] bg-[#393e6c49] p-0 m-0 box-border">
+    <div class="flex items-center justify-center h-full main">
+        <div class="flex flex-col w-1/5 gap-[1rem] p-4 bg-[#393E6C] border-white rounded-lg calculator border-3">
+            <div class="display">
+                <input type="text" id="display" readonly class="w-full p-8 text-2xl text-right text-white bg-[#3E4270] border-[#ffffff2f] border-[1px] border-gray-500 rounded-lg h-14">
+            </div>
+            <div class="grid grid-cols-4 buttons">
+                <button class="w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full" id="clear">AC</button>
+                <button class="w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full" id="c">C</button> 
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full" id="divide">/</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full" id="multiply">*</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">7</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">8</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">9</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full" id="minus">-</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">4</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">5</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">6</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full" id="plus">+</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">1</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">2</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">3</button>
+                <button id="equal" class="w-[60px] m-[0.5rem] h-[140px] row-span-2 text-lg font-medium text-white bg-[#494C79] rounded-[20px]">=</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">0</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">00</button>
+                <button class="btn w-[60px] h-[60px] m-[0.5rem] text-lg font-medium text-white bg-[#494C79] rounded-full">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
